@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    background-image: url('../src/girassois1.png'); /* Insira o caminho para a sua imagem de fundo */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-attachment: fixed; /* Fixa a imagem no lugar */
+    background-size: cover;
+    opacity: 8;
+}
+
+.title{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 50px;
+    color: #eadcb9;
+    text-align: center;
+    margin: 50;
+}
+
+
+.footer{
+    background-color: #914215;
+    align-items: end;
+    justify-content: center;
+    position: absolute;
+}
+
+header{
+    background-image: linear-gradient(#35acbd, #eadcb9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.main {
+    min-height: 100vh;
+    width: 100%; /* Largura da sua área de conteúdo principal */
+    background-color: rgb(0,0,0, 0.8); /* o 4° 'argumento' define a trasparência*/
+    padding-top: 50px; /* Espaçamento interno para o conteúdo */
+    overflow-y: auto; /* Adiciona barra de rolagem vertical se o conteúdo for maior que a área */
+}
+
+#contato{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+}
+
+.barra-navegacao{
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.barra-navegacao li{
+    display: inline-block;
+    margin-left: 60px;
+}
+
+.barra-navegacao li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.barra-navegacao li:hover{
+    transform: scale(1.1);
+}
+
+.container{
+    display:flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+}
+
+.box{
+    min-height: 60vh;
+    width: 45%;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #f0f0f0;
+    margin: 30px;
+    border-style: dotted;
+    border-color: #914215;
+    display: flexbox;
+}
+
+.simple-list{
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+#cabecalho{
+    font-size: 20px;
+    text-align: left;
+    display: flexbox;
+    font-family: "Caveat", sans-serif;
+}
+
+#sobre-mim{
+    font-family: 'Quicksand', sans-serif;
+    color: #35acbd;
+    text-align: right;
+    margin: 30px;
+    background-color: aliceblue;
+}
+
+#habilidades{
+    font-family: 'Quicksand', sans-serif;
+    color: #35acbd;
+    text-align: left;
+    margin: 30px;
+    background-color: aliceblue;
+}
+
+.texto-bemvindo{
+    margin: 90px;
+    font-size: 25px;
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+    color: #e8bd78;
+}
+
+.centerbox{
+    background-color: aliceblue;
+
+}
