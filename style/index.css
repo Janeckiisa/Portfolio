@@ -23,6 +23,7 @@ body{
 
 .footer{
     background-color: #914215;
+    width: 100%;
     align-items: end;
     justify-content: center;
     position: absolute;
@@ -90,6 +91,12 @@ header{
     display: flexbox;
 }
 
+.container2{
+    display:flex;
+    justify-content: space-between;
+    background-color: brown;
+}
+
 .simple-list{
     list-style-type: none;
     margin-left: 30px;
@@ -128,5 +135,4 @@ header{
 
 .centerbox{
     background-color: aliceblue;
-
 }
