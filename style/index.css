@@ -47,6 +47,9 @@ header{
 
 #contato{
     font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    margin: 30px;
+
 }
 
 .logo{
@@ -85,10 +88,25 @@ header{
     padding: 20px;
     border-radius: 15px;
     background-color: #f0f0f0;
-    margin: 30px;
+    margin: 30px auto;
     border-style: dotted;
     border-color: #914215;
-    display: flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box img {
+    max-width: 100%; /* Define a largura máxima da imagem */
+    height: auto; /* Para manter a proporção da imagem */
+    margin-bottom: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+.txtcaixa {
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .container2{
@@ -99,7 +117,7 @@ header{
 
 .simple-list{
     list-style-type: none;
-    margin-left: 30px;
+    text-align: center;
 }
 
 #cabecalho{
@@ -135,4 +153,10 @@ header{
 
 .centerbox{
     background-color: aliceblue;
+}
+
+
+.form{
+    size: 80px;
+    align-items:center;
 }
