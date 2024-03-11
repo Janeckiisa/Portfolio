@@ -12,23 +12,6 @@ body{
     opacity: 8;
 }
 
-.title{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 50px;
-    color: #eadcb9;
-    text-align: center;
-    margin: 50;
-}
-
-
-.footer{
-    background-color: #914215;
-    width: 100%;
-    align-items: end;
-    justify-content: center;
-    position: absolute;
-}
-
 header{
     background-image: linear-gradient(#35acbd, #eadcb9);
     display: flex;
@@ -37,110 +20,186 @@ header{
     padding: 20px;
 }
 
+.title{
+    font-size: 50px;
+    font-family: 'Quicksand', sans-serif;
+    color: #eadcb9;
+    text-align: center;
+
+}
+
+button{
+    padding: 10px 20px;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button a{
+    color: #914215;
+    text-decoration: none !important;
+    outline: none !important;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #914215;
+    color: aliceblue;
+}
+
+.footer{
+    padding: 50px;
+    background-image: linear-gradient(aliceblue, #35acbd);
+    width: 100%;
+    align-items: end;
+    justify-content: center;
+    position: absolute;
+}
+
 .main {
     min-height: 100vh;
     width: 100%; /* Largura da sua área de conteúdo principal */
     background-color: rgb(0,0,0, 0.8); /* o 4° 'argumento' define a trasparência*/
     padding-top: 50px; /* Espaçamento interno para o conteúdo */
     overflow-y: auto; /* Adiciona barra de rolagem vertical se o conteúdo for maior que a área */
-}
-
-#contato{
-    font-family: 'Quicksand', sans-serif;
     text-align: center;
-    margin: 30px;
-
 }
 
-.logo{
-    height: 100px;
-    width: 100px;
-}
+/*------------"botões" da header----------------*/
+    #cabecalho{
+        font-size: 20px;
+        text-align: left;
+        display: flexbox;
+        font-family: "Caveat", sans-serif;
+    }
 
-.barra-navegacao{
-    font-size: 20px;
-    list-style-type: none;
-}
+    #sobre-mim{
+        font-family: 'Quicksand', sans-serif;
+        color: #35acbd;
+        text-align: right;
+        margin: 30px;
+        background-color: aliceblue;
+    }
 
-.barra-navegacao li{
-    display: inline-block;
-    margin-left: 60px;
-}
+    #habilidades{
+        font-family: 'Quicksand', sans-serif;
+        color: aliceblue;
+        text-align: left;
+        margin: 30px;
+        background-color: #35acbd;
+    }
 
-.barra-navegacao li a{
-    text-decoration: none;
-    color: aliceblue;
-}
+    #hobbies{
+        font-family: 'Quicksand', sans-serif;
+        color: #35acbd;
+        text-align: right;
+        margin: 30px;
+        background-color: aliceblue;
+    }
 
-.barra-navegacao li:hover{
-    transform: scale(1.1);
-}
+    #contato{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        margin: 30px;
+        font-size: 50px;
+        color:aliceblue
+    }
+/*--------------Imagem da header---------------*/
+    .logo{
+        height: 100px;
+        width: 100px;
+    }
+/*------------barra de navegação--------------*/  
+    .barra-navegacao{
+        font-size: 20px;
+        list-style-type: none;
+    }
 
-.container{
-    display:flex;
-    justify-content: space-between;
-    background-color: aliceblue;
-}
+    .barra-navegacao li{
+        display: inline-block;
+        margin-left: 30px;
+    }
+
+    .barra-navegacao li a{
+        text-decoration: none;
+        color: aliceblue;
+    }
+
+    .barra-navegacao li:hover{
+        transform: scale(1.1);
+    }
+/*--------esse deixa o container branco--------*/
+    .container
+    {
+        display:flex;
+        justify-content: space-between;
+        background-color: aliceblue;
+    }
+/*-------esse deixa o container marrom---------*/
+    .container2
+    {
+        display: flex;
+        justify-content: space-between;
+        background-color: #35acbd;
+    }
+/*---------------------------------------------*/
+    .containerb
+    {
+        display:flex;
+        justify-content: left;
+        background-color: aliceblue;
+    }
+
+    .container2b
+    {
+        display:flex;
+        justify-content: right;
+        background-color: #35acbd;
+    }
 
 .box{
-    min-height: 60vh;
-    width: 45%;
+    max-height: 60vh;
+    width: 80%;
     padding: 20px;
     border-radius: 15px;
     background-color: #f0f0f0;
-    margin: 30px auto;
+    margin: auto;
     border-style: dotted;
     border-color: #914215;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    overflow-y: auto;
 }
 
-.box img {
-    max-width: 100%; /* Define a largura máxima da imagem */
-    height: auto; /* Para manter a proporção da imagem */
-    margin-bottom: 20px; /* Espaçamento entre a imagem e o texto */
+.imgbox{
+    border-radius: 15px;
+    margin: auto;
+    width: 60%;
+    border-style: dotted;
+    border-color: #914215;
+    display: flexbox;
+}
+
+.img{
+    border-radius: 15px;
+    margin: auto;
+    width: 20%;
+    border-style: dotted;
+    border-color: #914215;
 }
 
 .txtcaixa {
-    max-width: 80%;
+    max-width: 100%;
     text-align: center;
-    margin: 0 auto;
-}
-
-.container2{
-    display:flex;
-    justify-content: space-between;
-    background-color: brown;
+    font-size: 20px;
+    object-fit: contain;
 }
 
 .simple-list{
     list-style-type: none;
     text-align: center;
-}
-
-#cabecalho{
-    font-size: 20px;
-    text-align: left;
-    display: flexbox;
-    font-family: "Caveat", sans-serif;
-}
-
-#sobre-mim{
-    font-family: 'Quicksand', sans-serif;
-    color: #35acbd;
-    text-align: right;
-    margin: 30px;
-    background-color: aliceblue;
-}
-
-#habilidades{
-    font-family: 'Quicksand', sans-serif;
-    color: #35acbd;
-    text-align: left;
-    margin: 30px;
-    background-color: aliceblue;
 }
 
 .texto-bemvindo{
@@ -149,14 +208,93 @@ header{
     text-align: left;
     font-family: 'Quicksand', sans-serif;
     color: #e8bd78;
+    justify-content: space-between;
 }
 
-.centerbox{
-    background-color: aliceblue;
+.containerform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+    
+}
+.separador{
+    min-height: 60vh;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
+.legenda{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#d68d32;
+}
 
-.form{
-    size: 80px;
-    align-items:center;
+.boxform{
+    background-color: #d68d32;
+    width: 40%;
+    margin: auto;
+    padding: 50px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: #914215;
+}
+
+.boxform input[type="reset"] {
+    display: block;
+    margin: 0 auto;
+}
+
+input[type="text"] {
+    width: 450px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    color: #d68d32;
+    font-size: 16px;
+}
+
+input[type="email"] {
+    width: 450px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    color: #d68d32;
+    font-size: 16px;
+}
+
+input[type="textarea"] {
+    width: 450px;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    color: #d68d32;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #ccc;
+    color: #914215;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #914215;
+    color: #fff;
 }
