@@ -103,7 +103,7 @@ button:hover{
         text-align: center;
         margin: 30px;
         font-size: 50px;
-        color:aliceblue
+        color:aliceblue;
     }
 /*--------------Imagem da header---------------*/
     .logo{
@@ -246,6 +246,14 @@ button:hover{
     box-shadow: #914215;
 }
 
+.flechinha-inicio{
+    position: fixed;
+    bottom: 20px; /* Ajuste conforme necessário para a posição desejada */
+    right: 20px; /* Ajuste conforme necessário para a posição desejada */
+    cursor: pointer;
+    margin: 20px;
+    width: 20px;
+}
 .boxform input[type="reset"] {
     display: block;
     margin: 0 auto;
@@ -299,3 +307,227 @@ input[type="submit"]:hover {
     background-color: #914215;
     color: #fff;
 }
+
+@media(min-width: 360px) and (max-width: 767px ) {
+
+    .main {
+        min-height: 100vh;
+        width: 100%; /* Largura da sua área de conteúdo principal */
+        padding-top: 50px;
+    }
+
+    .footer{
+        padding: 20px;
+        width: 89%;
+        align-items: end;
+        justify-content: center;
+        position: absolute;
+    }
+
+    #contato{
+        font-size: 30px;
+        margin: auto;
+    }
+    
+    .title{
+        font-size: 30px;
+        font-family: 'Quicksand', sans-serif;
+        color: #eadcb9;
+        text-align: center;
+    }
+
+    .texto-bemvindo{
+        margin: 30px;
+        font-size: 18px;
+    }
+
+    .barra-navegacao{
+        font-size: 20px;
+    }
+
+    .barra-navegacao li{
+        display: block;
+        margin: 10px;
+    }
+
+    .txtcaixa {
+        max-width: 100%;
+        font-size: 15px;
+        object-fit: contain;
+    }
+
+    .imgbox{
+        margin: auto;
+        width: 90%;
+    }
+
+    .img{
+        width: 90%;
+        display: flexbox;
+    }
+
+    .container
+    {
+        flex-direction: column;
+    }
+
+    .container2
+    {
+        flex-direction: column;
+    }
+
+    .containerform {
+        height: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .separador{
+        min-height: 60vh;
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    input[type="text"] {
+        width: 150px;
+        margin-bottom: 20px;
+        font-size: 10px;
+    }
+    
+    input[type="email"] {
+        width: 150px;
+        margin-bottom: 20px;
+        font-size: 10px;
+    }
+    
+    input[type="textarea"] {
+        width: 150px;
+        height: 60px;
+        margin-bottom: 20px;
+        font-size: 10px;
+    }
+
+}
+
+ /* 768px - 1024px = telas menores, laptops */
+ @media (min-width: 768px) {
+
+    .main {
+        min-height: 80vh;
+        width: 100%; /* Largura da sua área de conteúdo principal */
+        padding-top: 50px;
+    }
+
+    .footer{
+        padding: 30px;
+        width: 708px;
+    }
+
+    .imgbox{
+        margin: auto;
+        width: 90%;
+    }
+
+    .img{
+        border-radius: 15px;
+        margin: auto;
+        width: 90%;
+        border-style: dotted;
+        border-color: #914215;
+        display: flexbox;
+    }
+
+    .separador{
+        min-height: 40vh;
+        width: 100%;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .boxform{
+        width: 60%;
+        padding: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+  }
+  
+  /* 1024px - 1200px = desktop menores */
+  @media (min-width: 1024px) {
+    .main {
+        min-height: 100vh;
+        width: 100%; /* Largura da sua área de conteúdo principal */
+        background-color: rgb(0,0,0, 0.8); /* o 4° 'argumento' define a trasparência*/
+        padding-top: 50px; /* Espaçamento interno para o conteúdo */
+        overflow-y: auto; /* Adiciona barra de rolagem vertical se o conteúdo for maior que a área */
+        text-align: center;
+    }
+
+    .footer{
+        padding: 30px;
+        width: 94.9%;
+        justify-content: center;
+    }
+
+    .texto-bemvindo{
+        margin: 100px;
+        font-size: 18px;
+    }
+
+    .box{
+        max-height: 50vh;
+        width: 60%;
+        padding: 30px;
+        background-color: #f0f0f0;
+        margin: auto;
+    }
+
+    .imgbox{
+        border-radius: 15px;
+        margin: auto;
+        width: 60%;
+        border-style: dotted;
+        border-color: #914215;
+        display: flexbox;
+    }
+
+    .img{
+        border-radius: 15px;
+        margin: auto;
+        width: 80%;
+        border-style: dotted;
+        border-color: #914215;
+        display: flexbox;
+    }
+  }
+  
+  /* 1200 e + = telas maiores, tvs */
+  @media (min-width: 1200px) {
+    .footer{
+        padding: 30px;
+        width: 96.85%;
+        justify-content: center;
+    }
+
+    .txtcaixa {
+        max-width: 100%;
+        font-size: 28px;
+    }
+
+    .separador{
+        min-height: 40vh;
+        width: 100%;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .texto-bemvindo{
+        margin: 100px;
+        font-size: 20px;
+    }
+  }
