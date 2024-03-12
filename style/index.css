@@ -254,6 +254,11 @@ button:hover{
     margin: 20px;
     width: 20px;
 }
+
+.icon{
+    width: 10%;
+}
+
 .boxform input[type="reset"] {
     display: block;
     margin: 0 auto;
@@ -308,6 +313,7 @@ input[type="submit"]:hover {
     color: #fff;
 }
 
+/*Para celulares*/
 @media(min-width: 360px) and (max-width: 767px ) {
 
     .main {
@@ -417,7 +423,7 @@ input[type="submit"]:hover {
 
     .main {
         min-height: 80vh;
-        width: 100%; /* Largura da sua área de conteúdo principal */
+        width: 100%;
         padding-top: 50px;
     }
 
@@ -469,7 +475,7 @@ input[type="submit"]:hover {
 
     .footer{
         padding: 30px;
-        width: 94.9%;
+        width: 94.09%;
         justify-content: center;
     }
 
@@ -499,8 +505,6 @@ input[type="submit"]:hover {
         border-radius: 15px;
         margin: auto;
         width: 80%;
-        border-style: dotted;
-        border-color: #914215;
         display: flexbox;
     }
   }
@@ -509,7 +513,7 @@ input[type="submit"]:hover {
   @media (min-width: 1200px) {
     .footer{
         padding: 30px;
-        width: 96.85%;
+        width: 95.5%;
         justify-content: center;
     }
 
