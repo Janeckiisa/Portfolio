@@ -185,9 +185,10 @@ button:hover{
 .img{
     border-radius: 15px;
     margin: auto;
-    width: 20%;
+    width: 60%;
     border-style: dotted;
     border-color: #914215;
+    display: flexbox;
 }
 
 .txtcaixa {
