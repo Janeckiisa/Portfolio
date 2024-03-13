@@ -4,6 +4,10 @@
     box-sizing: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-image: url('../src/girassois1.png'); /* Insira o caminho para a sua imagem de fundo */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
@@ -48,13 +52,16 @@ button:hover{
     color: aliceblue;
 }
 
+button a:hover{
+    color: aliceblue;
+}
+
 .footer{
     padding: 50px;
     background-image: linear-gradient(aliceblue, #35acbd);
     width: 100%;
     align-items: end;
     justify-content: center;
-    position: absolute;
 }
 
 .main {
