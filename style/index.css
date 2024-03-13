@@ -256,7 +256,7 @@ button:hover{
 }
 
 .icon{
-    width: 10%;
+    width: 2%;
 }
 
 .boxform input[type="reset"] {
@@ -513,7 +513,7 @@ input[type="submit"]:hover {
   @media (min-width: 1200px) {
     .footer{
         padding: 30px;
-        width: 95.5%;
+        width: 100%;
         justify-content: center;
     }
 
